@@ -1,0 +1,23 @@
+body {
+  font-family: 'Helvetica';
+  margin-left:10%;
+  margin-right:10%;
+  background-color:black;
+  color:white;
+}
+h1 {
+  color: rgb(222, 254, 66);
+}
+#partner1 {
+  color: rgb(141, 0, 153);
+}
+#partner2 {
+  color: rgb(205, 219, 35);
+}
+h3 {
+  color: rgb(241, 114, 217);
+}
+a {
+  color:rgb(120, 235, 255);
+  text-decoration:none;
+}
