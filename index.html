@@ -8,7 +8,7 @@
   <body>
     <h1>An Informative Lesson on Forms</h1>
     <!-- Insert you and your partner's name between the spans -->
-    <h2>by: <span id="partner1"></span> and <span id="partner2"></span></h2>
+    <h2>by: <span id="partner1">Tom</span> and <span id="partner2">Megan</span></h2>
     <p>Welcome knowledge-seeker. You seem to have stumbled upon this <strong>informative lesson on web forms.</strong> Let's get into it.</p>
     <h3>Wat is a <strong>web form</strong>?</h3>
     <p>A <strong>web form</strong> are the main way of getting information from your user into your application. Sometimes this information goes to a server to be saved in a database. Sometimes it's stored just in the browser. Look. Here are some sites that use forms.</p>
@@ -17,8 +17,12 @@
         <a href="https://www.sporcle.com/games/GeoGod/allharrypotter">Harry Potter Top 200 Sporcle</a>
       </li>
       <!-- Add in two more sites that have forms -->
-      <li></li>
-      <li></li>
+      <li>
+        <a href="https://www.facebook.com/login.php">Facebook Login</a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/signup">Twitter Signup</a>
+      </li>
     </ul>
     <h3>Form Elements: Control Tags</h3>
     <p><strong>Control tags</strong> are tags that build elements which a user can control to give information. There are four control tags:</p>
@@ -32,33 +36,69 @@
     <p>The default and most common type of input element is the single-line text field. We specify this using the <strong>type</strong> attribute and set it to "text".</p>
     <input type="text">
     <!-- Find 4-6 other input types (not radio or checkboxes) and put them below with brief descriptions of what they do. -->
+    <h3>color picker</h3>
+    <p>Allows the user to select a color of their choice.</p>
+    <input type="color">
+    <h3>submit</h3>
+    <p>A submit button</p>
+    <input type="submit">
+    <h3>date</h3>
+    <p>Allows user to put a date.</p>
+    <input type="date">
+    <h3>Password</h3>
+    <p>Allows a user to put a password.</p>
+    <input type="password">
+    <h3>Search</h3>
+    <p>User do a search</p>
+    <input type="search">
+
+
     <p>Let's take a closer look at two specific input types: <strong>radio</strong> and <strong>checkboxes</strong>.</p>
     <p><strong>Radio buttons</strong> are used when the user can only <strong>select one choice</strong> from many. Setting the input's value will allow you to access it using JavaScript, for example.
-    <!-- Find out how to adjust the name attribute so that only one radio button out of the three may be selected and add a sentence or two describing the rule. -->
+    <!-- Find out how to adjust the name attribute so that only one radio button out of the three may be selected and add a sentence or two describing the 1rule. -->
     </p>
-    <input type="radio" name="" value=""> Select me <br>
-    <input type="radio" name="" value=""> Not me <br>
-    <input type="radio" name="" value=""> Aaaand...not me <br>
+    <form>
+      <input type="radio" name="share" value="purple"> Select me <br>
+      <input type="radio" name="share" value="eggplant"> Not me <br>
+      <input type="radio" name="share" value="egg"> Aaaand...not me <br>
+    </form>
     <p><strong>Checkboxes</strong> are used when multiple choices can be selected.</p>
     <!-- Below, create three checkboxes with different values, and add an attribute to one of them that makes it checked by default. Add a paragraph describing some rules you found when setting checkbox attributes. -->
+    <form>
+      <input type="checkbox" id="chk1" value="firstchk" checked>Nice work1!
+      <input type="checkbox" id="chk2" value="secondchk">Nice work2!
+      <input type="checkbox" id="chk3" value="thirdchk">Nice work3!
+    </form>
+
     <h3>select</h3>
     <p>Select boxes allow the user to choose from a set of options.</p>
     <!-- Create a select box with three options and have the third one be selected by default -->
+    <select name="select">
+      <option value="Egg">Egg</option>
+      <option value="Pal">Pal</option>
+      <option value="Deg" selected>Deg</option>
+    </select>
     <!-- Create a select box with three options and have the second and third one be selected by default -->
+    <select name="select" multiple>
+      <option value="Egg">Egg</option>
+      <option value="Pal" selected>Pal</option>
+      <option value="Deg" selected>Deg</option>
+    </select>
+
     <h3>textarea</h3>
     <p>Here's a textarea. You can drag the lower-right corner to adjust its height and width.</p>
     <!-- Find out what other attributes you can control to set a default width and height. -->
-    <textarea></textarea>
+    <textarea rows="3" cols="40" maxlength="15" placeholder="EGGSPECTATIONS"></textarea>
     <h3>button</h3>
     There are three types of buttons:
     <ul>
       <li>button - good ol' button.<br>
         <button type="button">Just a butt...on</button>
       </li>
-      <li>submit <!-- Describe the point of a submit button when nested in a form and include an example -->
+      <li>submit -- submit form lol
 
       </li>
-      <li>reset <!-- Describe the point of a reset button when nested in a form and include an example -->
+      <li>reset --reset it haha
 
       </li>
     </ul>
